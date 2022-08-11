@@ -36,7 +36,6 @@ class LinkedList{
             tmp->next = nd;
         }    
     }
-
     void insertAtX(int data,int i){
         Node *nd = new Node(data);
         if(head == NULL){

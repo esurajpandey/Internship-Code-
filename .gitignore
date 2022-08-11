@@ -4,6 +4,9 @@
 *.exe
 *.zip
 
+
+git.key'.txt
+
 # Ada Library Information
 *.ali
-git.key
+

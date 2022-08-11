@@ -30,13 +30,13 @@ Node* LCA(Node *root,Node *n1,Node* n2){
         return root;
     }
     if(root->data==n1->data || root->data == n2->data){
-        return root;
+        return root;//answer
     }
 
     Node *llca = LCA(root->left,n1,n2);
     Node *rlca = LCA(root->right,n1,n2);
     if(llca != NULL && rlca != NULL){
-        return root;
+        return root;//answer
     }
     return llca!=NULL?llca:rlca;
 }
